@@ -19,3 +19,16 @@ Editar o nome e o número de vagas totais de um Curso existente.
 - excluir:
 Remover um Campus (o que exclui automaticamente todos os seus Cursos).
 Excluir um Curso específico de um Campus.
+
+# Como Executar o Código
+Para rodar este sistema, siga os passos abaixo:
+
+Requisitos: Certifique-se de ter o Python 3 instalado em sua máquina.
+
+Clone o Repositório: Clone este projeto para o seu computador.
+
+Executar: Abra o terminal na pasta do projeto e execute o arquivo principal (o nome do arquivo é SistemaUFC.py):
+
+Bash -> SistemaUFC.py
+
+Uso: O sistema abrirá o Menu Principal, permitindo que você navegue entre as opções para criar Campi e Cursos.
