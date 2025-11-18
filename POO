@@ -1,0 +1,66 @@
+saldoInicial = 1000
+lista_historico = []
+
+def depositar():
+    global saldoInicial
+    print("\n====Depósito====")
+    deposito = float(input("Quanto você deseja depositar?\n "))
+    saldoInicial += deposito
+    lista_historico.append(f"Depósito: R$ {deposito:.2f}")
+    print(f"Depósito de R$ {deposito:.2f} realizado com sucesso! \nSeu saldo atual é R$ {saldoInicial:.2f} \n")
+    return 
+
+def sacar():
+    global saldoInicial
+    print("\n====Saque====")
+    saque = float(input("Quanto você deseja sacar?:\n "))
+    if saque > saldoInicial:
+        print("Saldo insuficiente para realizar o saque.")
+    else:
+        saldoInicial -= saque
+        lista_historico.append(f"Saque: R$ {saque:.2f}")
+        print(f"Saque de R$ {saque:.2f} realizado com sucesso! \nSeu saldo atual é R$ {saldoInicial:.2f} \n")
+    return
+
+def ver_saldo():
+    print("\n====Saldo====")
+    print(f"Seu saldo atual é R$ {saldoInicial:.2f} \n")
+    return
+
+def ver_historico():
+    print("\n====Histórico de Transações====")
+    print("Histórico de transações:")
+    if not lista_historico:
+        print("Nenhuma transação registrada.")
+    else:
+        for transacao in lista_historico:
+            print(transacao)
+    print()
+    return
+
+def menu():
+    while True:
+        print("=== Menu ===")
+        print("1. Depositar")
+        print("2. Sacar")
+        print("3. Ver saldo")
+        print("4. Ver histórico de transações")
+        print("5. Sair")
+        
+        opcao = input("Escolha uma opção: ")
+        if opcao == "1":
+            depositar()
+        elif opcao == "2":
+            sacar()
+        elif opcao == "3":
+            ver_saldo()
+        elif opcao == "4":
+            ver_historico()
+        elif opcao == "5":
+            print("Saindo...")
+            print("Volte sempre!")
+            break
+        else:
+            print("Opção inválida. Tente novamente.")
+
+menu()
