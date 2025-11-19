@@ -1,6 +1,4 @@
 # objetivo 
-Por favor abra apenas SistemaUFC.py
-
 Este projeto implementa um sistema simples para simular a estrutura da Universidade Federal do Ceará (UFC), utilizando os conceitos de Programação Orientada a Objetos (POO) em Python com armazenamento em Listas.
 O sistema permite gerenciar a relação de Um-para-Muitos, onde cada Campus pode ter vários Cursos.
 
@@ -27,8 +25,6 @@ Requisitos: Certifique-se de ter o Python 3 instalado em sua máquina.
 
 Clone o Repositório: Clone este projeto para o seu computador.
 
-Executar: Abra o terminal na pasta do projeto e execute o arquivo principal (o nome do arquivo é SistemaUFC.py):
+Executar: Abra o terminal na pasta do projeto e execute o arquivo principal (main.py)
 
-Bash -> SistemaUFC.py
-
-Uso: O sistema abrirá o Menu Principal, permitindo que você navegue entre as opções para criar Campi e Cursos.
+Uso: O sistema abrirá o Menu Principal, permitindo que você navegue entre as opções para criar Campus e Cursos.
